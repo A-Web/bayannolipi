@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<style>
+		p {
+			font-family: sans-serif;
+			font-size: 13px;
+		}
+		</style>
+      <script>
+
+	  function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var prodId = getParameterByName('trns');
+
+
+
+ 
+//alert(prodId);
+	  </script>
+
+	</head>
+	<body>
+		 <div id="yuu" class="translate">Тестирование</p>
+<script>
+document.getElementById("yuu").innerHTML = prodId ;
+</script>
+    <div class="translate_control" lang="bn"></div>
+      <script>
+	function bayannoTrnsinit() {
+		
+      new google.translate.SectionalElement({
+        sectionalNodeClassName: 'translate',
+        controlNodeClassName: 'translate_control',
+        background: '#f4fa58'
+      }, 'google_sectional_element');
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=bayannoTrnsinit&ug=section&hl=bn"></script>
+	</body>
+</html>
