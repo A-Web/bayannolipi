@@ -242,7 +242,7 @@ position:relative;
 }
 
 window.onload = function() {
-    ssb.scrollbar('main_content'); // scrollbar initialization
+    ssb.scrollbar('transbody'); // scrollbar initialization
 }
 
 	  function getParameterByName(name) {
@@ -260,12 +260,15 @@ var prodId = getParameterByName('trns');
 	  </script>
 
 	</head>
-	<body id="main_content">
-		 <div id="yuu" class="translate">Тестирование</p>
+	<body >
+		<div id="transbody">
+		 <div  class="translate">Тестирование</p>
 <script>
-document.getElementById("yuu").innerHTML = prodId ;
+document.getElementById("transbody").innerHTML = prodId ;
 </script>
     <div class="translate_control" lang="bn"></div>
+    
+    </div>
       <script>
 	function bayannoTrnsinit() {
 		
